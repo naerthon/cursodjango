@@ -17,9 +17,10 @@ urlpatterns = patterns(
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^aula3/$', 'aula3.views.index', name='aula_index'),
+    url(r'^aula3/$', 'aula3.views.index', name='aula3_index'),
     url(r'^aula3/(?P<username>[\w@.]+)/$',
         'aula3.views.detail', name='aula_detail'),
+    url(r'^aula4/$', 'aula4.views.index', name='aula4_index'),
 )
 
 if settings.DEBUG:
